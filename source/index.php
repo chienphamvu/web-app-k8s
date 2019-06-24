@@ -10,9 +10,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+}
 
+?>
+
+<h2><?php echo "Connected successfully!"; ?></h2>
+
+<?php
 // $sql = "INSERT INTO MyGuests (firstname, lastname, email)
 // VALUES ('John', 'Doe', 'john@example.com')";
 
