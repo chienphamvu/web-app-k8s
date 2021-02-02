@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 ?>
 
-<h2><?php echo "Connected successfully!!"; ?></h2>
+<h2><?php echo "Connected successfully!!! Hello"; ?></h2>
 
 <?php
 $conn->close();
