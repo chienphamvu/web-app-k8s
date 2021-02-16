@@ -9,6 +9,8 @@ spec:
   replicas: 1
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: mysql # This has to match matchLabels above
     spec:

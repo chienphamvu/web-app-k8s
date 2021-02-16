@@ -6,9 +6,11 @@ spec:
   selector:
     matchLabels:
       app: php-apache # This has to match labels of template below
-  replicas: 2
+  replicas: 1
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: php-apache # This has to match matchLabels above
     spec:
